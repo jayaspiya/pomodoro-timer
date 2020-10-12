@@ -1,0 +1,13 @@
+.main {
+  &__timer {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 10px solid $dark;
+    display: grid;
+    place-content: center;
+  }
+  &__time {
+    font-size: 4rem;
+  }
+}

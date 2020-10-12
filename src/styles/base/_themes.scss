@@ -1,0 +1,9 @@
+.dark-mode {
+  color: $light;
+  .wrapper {
+    background: $dark;
+  }
+  .main__timer {
+    border: 10px solid $light;
+  }
+}
