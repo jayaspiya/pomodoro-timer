@@ -14,7 +14,7 @@ function pageTask() {
     .pipe(gulp.dest("./dist/"));
 }
 function imageTask() {
-  return gulp.src("./src/images/**/*").pipe(gulp.dest("./dist/images/"));
+  return gulp.src("./src/assets/**/*").pipe(gulp.dest("./dist/assets/"));
 }
 function styleTask() {
   return gulp
