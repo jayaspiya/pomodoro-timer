@@ -1,0 +1,23 @@
+.pomodoro-counter {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  &__title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  &__img {
+    display: flex;
+  }
+  &__img-box {
+    width: 35px;
+    margin: 0 2px;
+  }
+  .work-count {
+    transition: all 1s ease-out;
+    &--incomplete {
+      opacity: 40%;
+    }
+  }
+}

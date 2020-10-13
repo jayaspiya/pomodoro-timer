@@ -3,22 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Title</title>
+    <title>Pomodoro timer</title>
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body class="dark-mode">
     <div class="wrapper">
       <main>
         <div class="main__timer">
-          <div class="main__time">06:24</div>
+          <div class="main__caption" id="main__caption">Pomodoro</div>
+          <div class="main__time" id="main__time"></div>
         </div>
-        <button class="btn">Start Task</button>
+        <button class="btn btn-purple" id="btn-start">Start Task</button>
       </main>
       <div class="pomodoro-counter">
         <div class="pomodoro-counter__title">
           Pomodoro Count
         </div>
-        <div class="pomodoro-counter__img"></div>
+        <div class="pomodoro-counter__img">
+          <div class="pomodoro-counter__img-box">
+            <img class="work-count work-count--incomplete"src="./assets/tomato.svg" alt="work">
+          </div>
+          <div class="pomodoro-counter__img-box">
+            <img class="work-count work-count--incomplete"src="./assets/tomato.svg" alt="work">
+          </div>
+          <div class="pomodoro-counter__img-box">
+            <img class="work-count work-count--incomplete"src="./assets/tomato.svg" alt="work">
+          </div>
+          <div class="pomodoro-counter__img-box">
+            <img class="work-count work-count--incomplete"src="./assets/tomato.svg" alt="work">
+          </div>
+        </div>
       </div>
     </div>
     <script type="module" src="./scripts/app.js"></script>

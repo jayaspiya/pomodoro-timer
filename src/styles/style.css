@@ -25,6 +25,9 @@ body {
   background: #ffffff;
   height: 100vh;
   padding: 0 4rem;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
 }
 
 .main__timer {
@@ -37,11 +40,69 @@ body {
   place-content: center;
 }
 
+.main__timer * {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
 .main__time {
   font-size: 4rem;
 }
 
-button {
+.main__caption {
+  text-align: center;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.btn {
+  font-size: 1.5rem;
+  width: 250px;
+  border: none;
+  outline: none;
+  padding: 4px 0;
+  margin: 20px 25px 0 25px;
+  margin-top: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn-purple {
   background: #6d76ff;
+  color: #ffffff;
+}
+
+.pomodoro-counter {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.pomodoro-counter__title {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.pomodoro-counter__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pomodoro-counter__img-box {
+  width: 35px;
+  margin: 0 2px;
+}
+
+.pomodoro-counter .work-count {
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.pomodoro-counter .work-count--incomplete {
+  opacity: 40%;
 }
 /*# sourceMappingURL=style.css.map */

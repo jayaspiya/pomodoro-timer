@@ -2,4 +2,6 @@
   background: $light;
   height: 100vh;
   padding: 0 4rem;
+  display: grid;
+  place-content: center;
 }

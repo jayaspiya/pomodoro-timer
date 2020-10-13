@@ -6,8 +6,16 @@
     border: 10px solid $dark;
     display: grid;
     place-content: center;
+    * {
+      transform: translateY(-10px);
+    }
   }
   &__time {
     font-size: 4rem;
+  }
+  &__caption {
+    text-align: center;
+    font-size: 1.2rem;
+    opacity: 0.8;
   }
 }
