@@ -1,8 +1,6 @@
 const breakTime = 300;
 const workTime = 1500;
 let isWork = true;
-let isTimerActivated = false;
-let pomodoroCount = 0;
 let timer;
 const btnStart = document.querySelector("#btn-start")
 const mainTime = document.querySelector("#main__time")
@@ -42,23 +40,34 @@ function startTimer(countdown){
                 if(tomato.length>0){
                     tomato[0].classList.remove('work-count--incomplete');
                 }
+                showNotification("Take a break","Pomodoro Completed")
+
             }
             else{
                 mainCaption.innerHTML = "Break Completed";
+                showNotification("Break Completed","Focus on task")
             }
         }
-    },1000)
-}
-
-function timeFormat(number){
-    let minute = makeTwoDigits(Math.floor(number /60));
-    let second = makeTwoDigits(number%60);
-    return minute+":"+second;
-    function makeTwoDigits(n){
-        if(n<10){
-            n = "0"+ n;
+    },1000);
+    function timeFormat(number){
+        let minute = makeTwoDigits(Math.floor(number /60));
+        let second = makeTwoDigits(number%60);
+        return minute+":"+second;
+        function makeTwoDigits(n){
+            if(n<10){
+                n = "0"+ n;
+            }
+            return n;
         }
-        return n;
     }
 }
 
+
+function showNotification(title, desciption){
+     new Notification(title,{
+        body: desciption
+    })
+}
+if(Notification.permission !== "denied"){
+    Notification.requestPermission()
+}
