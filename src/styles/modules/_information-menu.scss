@@ -1,0 +1,72 @@
+.information-menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $light;
+  color: $dark;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  &--hide {
+    opacity: 0;
+  }
+  &__slide {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    &-text {
+      position: absolute;
+      bottom: 25px;
+      text-align: center;
+      width: 100%;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    &--show {
+      display: block;
+    }
+  }
+  &__controller {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transform: translateY(-50%);
+    button {
+      background: transparent;
+      padding: 10px;
+      outline: none;
+      border: none;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      color: $dark;
+      cursor: pointer;
+      opacity: 0.9;
+      transition: all 0.2s ease-out;
+
+      &:hover {
+        opacity: 1;
+        font-size: 1.8rem;
+      }
+    }
+  }
+  &__toggler {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    background: $purple;
+    padding: 10px 15px;
+    border-radius: 50%;
+    opacity: 0.8;
+  }
+}

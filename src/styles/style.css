@@ -105,4 +105,93 @@ body {
 .pomodoro-counter .work-count--incomplete {
   opacity: 40%;
 }
+
+.information-menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #ffffff;
+  color: #2d2d2d;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.information-menu--hide {
+  opacity: 0;
+}
+
+.information-menu__slide {
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.information-menu__slide-text {
+  position: absolute;
+  bottom: 25px;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.information-menu__slide--show {
+  display: block;
+}
+
+.information-menu__controller {
+  position: absolute;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.information-menu__controller button {
+  background: transparent;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #2d2d2d;
+  cursor: pointer;
+  opacity: 0.9;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.information-menu__controller button:hover {
+  opacity: 1;
+  font-size: 1.8rem;
+}
+
+.information-menu__toggler {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: #6d76ff;
+  padding: 10px 15px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
 /*# sourceMappingURL=style.css.map */
