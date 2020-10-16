@@ -9,8 +9,11 @@
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
+  display: block;
+  visibility: visible;
   &--hide {
-    opacity: 0;
+    display: none;
+    visibility: hidden;
   }
   &__slide {
     height: inherit;

@@ -118,10 +118,13 @@ body {
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
+  display: block;
+  visibility: visible;
 }
 
 .information-menu--hide {
-  opacity: 0;
+  display: none;
+  visibility: hidden;
 }
 
 .information-menu__slide {
