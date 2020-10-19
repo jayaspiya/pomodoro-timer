@@ -2,6 +2,8 @@
 
 Increase your productivity with pomodoro
 
+![Cover](./cover.png)
+
 ## How does it work?
 
 - Select a task to do
