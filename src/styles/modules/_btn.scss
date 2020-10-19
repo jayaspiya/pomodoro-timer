@@ -13,4 +13,14 @@
     background: $purple;
     color: $light;
   }
+  &--circle {
+    width: auto;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 50%;
+    color: #000;
+    position: absolute;
+    top: -30px;
+    right: -35px;
+  }
 }

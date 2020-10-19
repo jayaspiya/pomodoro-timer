@@ -73,6 +73,17 @@ body {
   color: #ffffff;
 }
 
+.btn--circle {
+  width: auto;
+  font-size: 0.7rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 50%;
+  color: #000;
+  position: absolute;
+  top: -30px;
+  right: -35px;
+}
+
 .pomodoro-counter {
   position: absolute;
   bottom: 40px;
@@ -204,11 +215,10 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  opacity: 0.7;
   padding: 5px 15px;
   font-size: 1.5rem;
   border-radius: 10px;
-  background: red;
+  background: rgba(255, 0, 0, 0.7);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;

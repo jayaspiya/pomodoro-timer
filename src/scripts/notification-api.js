@@ -9,6 +9,14 @@ export default class Notify{
             const message = "Enable Notification for Better Experience.";
             const textnode = document.createTextNode(message); 
             div.appendChild(textnode);
+            const btn = document.createElement("button");
+            const btnLabel = "X";
+            const btnNode = document.createTextNode(btnLabel);
+            btn.classList.add("btn");
+            btn.classList.add("btn--circle");
+            btn.setAttribute("id", "btn-hide");
+            btn.appendChild(btnNode);
+            div.appendChild(btn);
             document.body.appendChild(div)
          }
     }
@@ -20,4 +28,3 @@ export default class Notify{
 
 }
 
-{/* <div class="message-box">Notification Disabled\</div> */}

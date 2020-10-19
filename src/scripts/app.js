@@ -3,10 +3,11 @@ import ringBell from  "./audio.js";
 import Notify from "./notification-api.js";
 import timeFormat from "./timeFormater.js";
 import {changeSlide, hideAllSlides, informationMenu, informationMenuSlide, resetSlideIndex} from "./slider.js";
+import hideParent from "./hide-element.js";
 
 //* Time Period Setup | Default break 300, work 1500
-const breakTime = 3;
-const workTime = 5;
+const breakTime = 300;
+const workTime = 1500;
 
 //* DOM variables
 const btnStart = document.querySelector("#btn-start");
@@ -32,6 +33,9 @@ document.addEventListener('click',function(e){
     }
     if(e.target.id== "next-btn"){
         changeSlide(1);
+    }
+    if(e.target.id == "btn-hide"){
+        hideParent(e);
     }
 });
 
